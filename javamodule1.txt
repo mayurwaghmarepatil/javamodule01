@@ -1,0 +1,129 @@
+Q1.What is the difference between Compiler and Interpreter
+
+Compilar-
+
+1) The Compiler is a translator which takes input i.e., High-Level Language, and produces        an output of low-level language i.e. machine or assembly language.
+2) Compiled code runs faster in comparison to Interpreted code.
+3) Compilers help in improving the security of Applications.
+4) As Compilers give Debugging tools, which help in fixing errors easily.
+5) The compiler can catch only syntax errors and some semantic errors.
+6) Compilation can take more time in the case of bulky code.
+
+Interpreter-
+
+1) An Interpreter is a program that translates a programming language into a comprehensible language. The interpreter converts high-level language to an intermediate language. 
+2) Programs written in an Interpreted language are easier to debug.
+3) Interpreters allow the management of memory automatically, which reduces memory error risks.
+4) Interpreted Language is more flexible than a Compiled language.
+5)The interpreter can run only the corresponding Interpreted program.
+6)Interpreted code runs slower in comparison to Compiled code.
+
+
+Q2.What is the difference between JDK, JRE, and JVM?
+
+JDK
+
+1) The JDK is an abbreviation for Java Development Kit.
+2) The JDK (Java Development Kit) is a software development kit that develops applications in Java. Along with JRE, the JDK also consists of various development tools (Java Debugger, JavaDoc, compilers, etc.)
+3) The JDK primarily assists in executing codes. It primarily functions in development.
+4) The JDK is platform-dependent. It means that for every different platform, you require a different JDK.
+5) Since JDK is primarily responsible for the development, it consists of various tools for debugging, monitoring, and developing java applications.
+6) JDK = Development Tools + JRE (Java Runtime Environment)
+
+JRE
+
+1) The JRE is an abbreviation for Java Runtime Environment.
+2) The Java Runtime Environment (JRE) is an implementation of JVM. It is a type of software package that provides class libraries of Java, JVM, and various other components for running the applications written in Java programming.
+3) JRE has a major responsibility for creating an environment for the execution of code
+4) JRE, just like JDK, is also platform-dependent. It means that for every different platform, you require a different JRE.
+5) JRE, on the other hand, does not consist of any tool- like a debugger, compiler, etc. It rather contains various supporting files for JVM, and the class libraries that help JVM in running the program.
+6) JRE = Libraries for running the application + JVM (Java Virtual Machine)
+
+
+JVM
+
+1) The JVM is an abbreviation for Java Virtual Machine.
+2) The Java Virtual Machine (JVM) is a platform-independent abstract machine that has three notions in the form of specifications. This document describes the requirement of JVM implementation.
+3) JVM specifies all of the implementations. It is responsible for providing all of these implementations to the JRE.
+4) The JVM is platform-independent. It means that you won’t require a different JVM for every different platform
+5) JVM does not consist of any tools for software development.
+6) JVM = Only the runtime environment that helps in executing the Java bytecode.
+
+
+Q3.How many types of memory areas are allocated by JVM?
+
+The memory in the JVM is divided into five different parts namely−
+1) Class(Method) Area
+2) Heap
+3) Stack
+4) Program Counter Register
+5) Native Method Stack
+
+Q4.What is JIT compiler?
+
+The JIT compiler helps improve the performance of Java programs by compiling bytecodes into native machine code at run time.
+ The JIT compiler is enabled by default. When a method has been compiled, the JVM calls the compiled code of that method directly instead of interpreting it.
+
+Q5.What are the various access specifiers in Java?
+
+There are four types of Java access modifiers:
+
+1) Private: The access level of a private modifier is only within the class. It cannot be accessed from outside the class.
+2) Default: The access level of a default modifier is only within the package. It cannot be accessed from outside the package. If you do not specify any access level, it will be the default.
+3) Protected: The access level of a protected modifier is within the package and outside the package through child class. If you do not make the child class, it cannot be accessed from outside the package.
+4) Public: The access level of a public modifier is everywhere. It can be accessed from within the class, outside the class, within the package and outside the package.
+
+Q6.What is a compiler in Java?
+
+A compiler is a translator that produces an output of low-level language (like an assembly or machine language) by taking an input of high-level language. It is basically a computer program used to transform codes written in a programming language into machine code (human-readable code to a binary 0 and 1 bits language for a computer processor to understand). The computer then processes the machine code for performing the corresponding tasks.
+
+Compilers check all types of errors, limits, and ranges. Thus, it’s more intelligent.
+The run time of its program is longer, and it occupies more memory.
+
+Q7.Explain the types of variables in Java?
+
+There are three different types of variables a class can have in Java are local variables, instance variables, and class/static variables.
+
+1) Local Variable
+A local variable in Java can be declared locally in methods, code blocks, and constructors. When the program control enters the methods, code blocks, and constructors then the local variables are created and when the program control leaves the methods, code blocks, and constructors then the local variables are destroyed. A local variable must be initialized with some value.
+
+2) Instance Variable
+An instance variable in Java can be declared outside a block, method or constructor but inside a class. These variables are created when the class object is created and destroyed when the class object is destroyed.
+
+3) Static/Class Variable
+A static/class variable can be defined using the static keyword. These variables are declared inside a class but outside a method and code block. A class/static variable can be created at the start of the program and destroyed at the end of the program.
+
+Q8.What are the Datatypes in Java?
+
+Data types specify the different sizes and values that can be stored in the variable. There are two types of data types in Java:
+
+1) Primitive data types: The primitive data types include boolean, char, byte, short, int, long, float and double.
+2) Non-primitive data types: The non-primitive data types include Classes, Interfaces, and Arrays.
+
+
+Q9.What are the identifiers in java?
+
+Identifiers in Java
+Identifiers in Java are symbolic names used for identification. They can be a class name, variable name, method name, package name, constant name, and more. However, In Java, There are some reserved words that can not be used as an identifier.
+
+Q10.Explain the architecture of JVM 
+
+JVM (Java Virtual Machine) Architecture
+Java Virtual Machine
+Internal Architecture of JVM
+JVM (Java Virtual Machine) is an abstract machine. It is a specification that provides runtime environment in which java bytecode can be executed.
+
+JVMs are available for many hardware and software platforms (i.e. JVM is platform dependent).
+The JVM performs following operation:
+
+Loads code
+Verifies code
+Executes code
+Provides runtime environment
+JVM provides definitions for the:
+
+Memory area
+Class file format
+Register set
+Garbage-collected heap
+Fatal error reporting etc.
